@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+.book-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.book-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.book-details {
+    margin-bottom: 20px;
+}
+
+.book-author,
+.book-price,
+.book-published-on {
+    margin-bottom: 5px;
+}
+
+.btn {
+    margin-right: 5px;
+}

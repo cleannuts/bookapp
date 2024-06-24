@@ -1,10 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @book %>
+<div class="book-container">
+  <h1 class="book-title"><%= @book.title %></h1>
 
-<div>
-  <%= link_to "Edit this book", edit_book_path(@book) %> |
-  <%= link_to "Back to books", books_path %>
+  <div class="book-details">
+    <p class="book-author">著者: <%= @book.author %></p>
+    <p class="book-price">価格: <%= number_to_currency(@book.price, unit: "¥", precision: 0) %></p>
+    <p class="book-published-on">出版日: <%= @book.published_on.strftime("%Y年%m月%d日") %></p>
+  </div>
 
-  <%= button_to "Destroy this book", @book, method: :delete %>
+  <%= link_to "編集", edit_book_path(@book), class: "bt btn-primary" %>
+  <%= link_to "一覧に戻る", books_path, class: "btn btn-secondary" %>
 </div>
