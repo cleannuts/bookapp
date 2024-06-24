@@ -15,7 +15,6 @@ services:
 databases:
   - name: appdb
     user: appdb
-    databaseName: noteappdb
     plan: free
 
 version: "1"
