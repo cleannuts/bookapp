@@ -1,6 +1,6 @@
 services:
 - type: web
-  name: noteapp
+  name: bookapp
   runtime: ruby
   plan: free
   envVars:
